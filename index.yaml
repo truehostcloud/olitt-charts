@@ -1,0 +1,14 @@
+apiVersion: v1
+entries:
+  olitt-app:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2026-10-20T12:41:59.358312175Z"
+    description: Runs a single containerized web application
+    digest: 84fcf6184016ca83eec55f951ab5a3dd1ea87fd288ace245e255c22de709506b
+    name: olitt-app
+    type: application
+    urls:
+    - https://github.com/truehostcloud/olitt-charts/releases/download/olitt-app-0.1.0/olitt-app-0.1.0.tgz
+    version: 0.1.0
+generated: "2026-10-20T12:41:59.358319368Z"
