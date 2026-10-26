@@ -97,6 +97,9 @@ autoscaling:
   targetCPUUtilizationPercentage: 80
   # targetMemoryUtilizationPercentage: 80
 
+# Name of a Secret whose keys are loaded into the container as environment variables.
+envFromSecret: ""
+
 # Additional volumes on the output Deployment definition.
 volumes: []
 # - name: foo

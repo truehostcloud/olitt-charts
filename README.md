@@ -26,5 +26,6 @@ helm install my-app olitt/olitt-app --set image.repository=<image> --set image.t
 | `ingress.className` | `""` | Ingress class |
 | `ingress.hosts` | `chart-example.local` | Hostnames and paths |
 | `resources` | `{}` | CPU and memory requests and limits |
+| `envFromSecret` | `""` | Secret whose keys become the container's environment variables |
 | `serviceAccount.automount` | `false` | Mount the service account token |
 | `livenessProbe`, `readinessProbe` | TCP check on the service port | Health checks |
