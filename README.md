@@ -29,3 +29,4 @@ helm install my-app olitt/olitt-app --set image.repository=<image> --set image.t
 | `envFromSecret` | `""` | Secret whose keys become the container's environment variables |
 | `serviceAccount.automount` | `false` | Mount the service account token |
 | `livenessProbe`, `readinessProbe` | TCP check on the service port | Health checks |
+| `startupProbe` | TCP check on the service port, every 5s, up to 60 times | Gives the app up to 5 minutes to start before the health checks begin |

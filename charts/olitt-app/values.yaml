@@ -88,6 +88,13 @@ livenessProbe:
 readinessProbe:
   tcpSocket:
     port: http
+# Holds off the liveness and readiness probes until the app first opens its port.
+# 60 checks 5 seconds apart give a slow start (for example database migrations) up to 5 minutes.
+startupProbe:
+  tcpSocket:
+    port: http
+  periodSeconds: 5
+  failureThreshold: 60
 
 #This section is for setting up autoscaling more information can be found here: https://kubernetes.io/docs/concepts/workloads/autoscaling/
 autoscaling:
